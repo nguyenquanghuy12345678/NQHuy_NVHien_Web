@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<!--=============== REMIXICONS ===============-->
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+
+<!--=============== CSS ===============-->
+<!-- <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Animated login form - Bedimcode</title> -->
+
+
+<!-- Link Jquery -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   </head>
+   <body>
+      <div class="login">
+         <img src="assets/img/login-bg.png" alt="login image" class="login__img">
+
+         <form action="D:\Travel Web\index.html" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__content">
+               <div class="login__box">
+                  <i class="ri-user-3-line login__icon"></i>
+
+                  <div class="login__box-input">
+                     <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                     <label for="login-email" class="login__label">Email</label>
+                  </div>
+               </div>
+
+               <div class="login__box">
+                  <i class="ri-lock-2-line login__icon"></i>
+
+                  <div class="login__box-input">
+                     <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                     <label for="login-pass" class="login__label">Password</label>
+                     <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-group">
+                  <input type="checkbox" class="login__check-input" id="login-check">
+                  <label for="login-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <p class="login__register">
+               Don't have an account? <a href="#">Register</a>
+            </p>
+         </form>
+      </div>
+      
+      =============== MAIN JS =============== -->
+<!-- <script src="assets/js/main.js"></script>
+   </body>
+</html>
+ -->
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Login and Register Form</title>
+   <!-- Link Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+   <div class="login">
+      <img src="assets/img/login-bg.png" alt="login image" class="login__img">
+      <form id="login-form" class="login__form">
+         <h1 class="login__title">Login</h1>
+         <div class="login__content">
+            <div class="login__box">
+               <i class="ri-user-3-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                  <label for="login-email" class="login__label">Email</label>
+               </div>
+            </div>
+            <div class="login__box">
+               <i class="ri-lock-2-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                  <label for="login-pass" class="login__label">Password</label>
+                  <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+               </div>
+            </div>
+         </div>
+         <div class="login__check">
+            <div class="login__check-group">
+               <input type="checkbox" class="login__check-input" id="login-check">
+               <label for="login-check" class="login__check-label">Remember me</label>
+            </div>
+            <a href="#" class="login__forgot">Forgot Password?</a>
+         </div>
+         <button type="button" class="login__button" onclick="submitForm('login')">Login</button>
+         <p class="login__register">
+            Don't have an account? <a href="#" onclick="toggleForm('register')">Register</a>
+         </p>
+      </form>
+      <form id="register-form" class="login__form" style="display:none;">
+         <h1 class="login__title">Register</h1>
+         <div class="login__content">
+            <div class="login__box">
+               <i class="ri-user-3-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="email" required class="login__input" id="register-email" placeholder=" ">
+                  <label for="register-email" class="login__label">Email</label>
+               </div>
+            </div>
+            <div class="login__box">
+               <i class="ri-lock-2-line login__icon"></i>
+               <div class="login__box-input">
+                  <input type="password" required class="login__input" id="register-pass" placeholder=" ">
+                  <label for="register-pass" class="login__label">Password</label>
+                  <i class="ri-eye-off-line login__eye" id="register-eye"></i>
+               </div>
+            </div>
+         </div>
+         <button type="button" class="login__button" onclick="submitForm('register')">Register</button>
+         <p class="login__register">
+            Already have an account? <a href="#" onclick="toggleForm('login')">Login</a>
+         </p>
+      </form>
+   </div>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>

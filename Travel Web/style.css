@@ -300,21 +300,21 @@
 }
 
 
-/* Phần Gallery  */
+/* Phần gallary  */
 
-.gallery{
+.gallary{
     margin-top:50px;
 }
-.gallery .card{
+.gallary .card{
     border-radius:10px ; 
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     cursor: pointer;
 }
-.galerry .card img{
+.gallary .card img{
     border-radius: 10px ;
     transition: 0.5s;
 }
-.galerry .card img:hover{
+.gallary .card img:hover{
     transform: scale(1.2);
 
 }
@@ -358,12 +358,110 @@
     }
    
 }
+/* video */ 
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+   
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+.responsive-iframe {
+    width: 90%;
+    height: 80vh; /* Để video cao 80% chiều cao màn hình */
+    border: none;
+}
+.video .main-txt{
+    text-align: center;
+    margin-top:30px;
+    font-weight:600 ;
+    text-shadow: 0px 1px 1px black;
+    color:rgb(20, 19, 18) ;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    
+}
+.video .main-txt span{
+    color:orange ;
+}
+
+
+
+/* top 10 */ /* Top 10 Most Beautiful Places Section */
+.top-10-places {
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+.places-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+   
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.places-table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.places-table th,
+.places-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.places-table th {
+    background-color: #f2f2f2;
+}
+
+.places-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.places-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+  .places-table .main-txt{
+    text-align: center;
+    margin-top:30px;
+    font-weight:600 ;
+    text-shadow: 0px 1px 1px black;
+    color:rgb(20, 19, 18) ;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    
+}
+.places-table .main-txt span{
+    color:orange ;
+}
 
 /* Footer */
 
 #footer{
     width:100%;
-    margin-top: 150px;
+    margin-top: 100px;  /* cao quá */
     text-align: center;
     background: white;
 
